@@ -8,77 +8,91 @@
 </head>
 <body>
 <div>
+<fieldset>
 <h1>Formulário</h1>
 <form action="#" method="post">
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"
+            placeholder="" size="20" maxlength="">
+        </div>
+        <div>
+            <label for="endereço">Endereço:</label>
+            <input type="text" name="endereço" id="endereço"
+            placeholder="" size="20" maxlength="">
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade"
+            placeholder="" size="20" maxlength="">
+        </div>
+        <div>
+            <label for="">Estado</label>
+            <select name="est" id="est">
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Amazonas</option>
+                    <option value="5">Bahia</option>
+                    <option value="6">Ceará</option>
+                    <option value="7">Distrito Federal</option>
+                    <option value="8">Espirito Santo</option>
+                    <option value="9">Goiás</option>
+                    <option value="10">Maranhão</option>
+                    <option value="11">Mato Grosso</option>
+                    <option value="12">Mato Grosso do Sul</option>
+                    <option value="13">Minas Gerais</option>
+                    <option value="14">Pará</option>
+                    <option value="15">Paraíba</option>
+                    <option value="16">Paraná</option>
+                    <option value="17">Pernambuco</option>
+                    <option value="18">Piauí</option>
+                    <option value="19">Rio de Janeiro</option>
+                    <option value="20">Rio Grande do Norte</option>
+                    <option value="21">Rio Grande do Sul</option>
+                    <option value="22">Rondônia</option>
+                    <option value="23">Roraima</option>
+                    <option value="24">Santa Catarina</option>
+                    <option value="25" selected>São Paulo</option>
+                    <option value="26">Sergipe</option>
+                    <option value="27">Tocantins</option>
+            </select>
+        </div>
+</fieldset> 
 <fieldset>
-    <legend>Dados pessoais</legend>
+    <legend>Dados Profissionais</legend>
     <div>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome"
-        placeholder="" size="20" maxlength="">
+        <label for="nome">Natureza do Cargo</label><br>
+        <input type="radio" name="prof" id="gerencia">
+        <label>Gerência</label>
+        <input type="radio" name="prof" id="financeiro">
+        <label>Financeiro</label>
+        <input type="radio" name="prof" id="recepção">
+        <label>Recepção</label>
+        <input type="radio" name="prof" id="administrativo">
+        <label>Administrativo</label>
+        <input type="radio" name="prof" id="juridico">
+        <label>Jurídico</label>
     </div>
+    <br>
+        <label for="nome">Área de Interesse</label><br>
+        <input type="checkbox" name="comput" id="comput">
+        <label for="Computação">Computação</label>
+        <input type="checkbox" name="bio" id="bio">
+        <label for="Biologia">Biologia</label>
+        <input type="checkbox" name="ma" id="ma">
+        <label for="Meio Ambiente">Meio Ambiente</label>
+        <input type="checkbox" name="eng" id="eng">
+        <label for="Engenharia">Engenharia</label>
+        <input type="checkbox" name="hist" id="hist">
+        <label for="História">História</label>
+</form>fieldset>
     <div>
-        <label for="endereço">Endereço:</label>
-        <input type="text" name="endereço" id="endereço"
-        placeholder="" size="20" maxlength="">
-    </div>
-    <div>
-        <label for="cidade">Cidade:</label>
-        <input type="password" name="senha" id="senha"
-        placeholder="Digite sua senha" size="20" maxlength="8" required>
-    </div>
-</fieldset>
-<fieldset>
-    <legend>Dados Funcionais</legend>
-    <div>
-        <label>Profissão</label><br>
-        <input type="radio" name="prof" id="professor">
-        <label>Professor</label>
-        <input type="radio" name="prof" id="estudante">
-        <label>Estudante</label>
-        <input type="radio" name="prof" id="outros" checked>
-        <label>Outros</label>
-    </div>
-    <div>
-        <label>Qual tecnologia domina:</label><br>
-        <input type="checkbox" name="html" id="html">
-        <label for="html">HTML</label>
-        <input type="checkbox" name="js" id="js">
-        <label for="js">JavaScript</label>
-        <input type="checkbox" name="css" id="css">
-        <label for="css">CSS</label>
-    </div>
-    <div>
-        <label for="recado">Deixe seu recado</label><br>
-        <textarea name="recado" id="recado" cols="30" rows="10"
-        placeholder="Deixe seu recado"></textarea>
-    </div>
-    <div>
-        <label for="">Qual sua escolaridade</label>
-        <select name="esq" id="esc">
-            <optgroup label="Opção 1">
-                <option value="1">Ensino Fundamental 1</option>
-                <option value="2">Ensino Fundamental 2</option>
-                <option value="3">Ensino Médio</option>
-            </optgroup>
-            <optgroup label="Opção 2">
-                <option value="4">Ensino Superior</option>
-                <option value="5">Pós Graduação</option>
-                <option value="6" selected>Outros</option>
-            </optgroup>
-        </select>
-    </div>
-    <div>
-        <label for="">Escolha uma cor</label>
-        <input type="color" name="cor" id="cor">
-        <br>
-        <label for="dt">Escolha uma Data</label>
-        <input type="date" name="dt" id="dt">
-        <label for="">Entre com um arquivo</label>
-        <input type="file" name="file" id="file">
-        <hr>
-        <label for="num">Entre com um número</label>
-        <input type="number" name="num" id="num">
+        <label for="">Mini-Currículo:</label>
+        <textarea name="curriculo" id="curriculo" cols="30" rows="10"
+        placeholder=""></textarea>
     </div>
 </fieldset>
 <div>
@@ -87,6 +101,6 @@
     <button type="submit">Enviar</button>
     <button type="reset">Apagar</button>
 </div>
-    </form>
+</form>
 </body>
 </html>
