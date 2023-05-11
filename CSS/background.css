@@ -1,0 +1,24 @@
+.bgcolor {
+    background-color: burlywood;
+    height: 50px;
+    width: 35%;
+}
+
+.bgimage{
+    background-image: url(https://i1.sndcdn.com/artworks-Uii8SMJvNPxy8ePA-romBoQ-t500x500.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: contain;
+}
+
+.bgimage p {
+    background-color: rgb(255, 255, 255);
+    width: 35%
+}
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/5192459.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
